@@ -1,0 +1,27 @@
+// You are using Java
+import java.util.*;
+class main
+{
+    static boolean palindrome(String str)
+    {
+        StringBuilder sb=new StringBuilder(str);
+        String result=sb.reverse().toString();
+        if(result.equals(str))
+        {
+            return true;
+        }
+        else 
+        return false;
+    }
+    public static void main(String[]args)
+    {
+        Scanner sc= new Scanner(System.in);
+        String s=sc.nextLine();
+        if(palindrome(s))
+        {
+            System.out.println("Yes, the word \""+s+"\" is a palindrome.");
+        }
+        else
+        System.out.println("No, the word \""+s+"\" is not a palindrome.");
+    }
+}
